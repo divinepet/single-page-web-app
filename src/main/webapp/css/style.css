@@ -1,0 +1,181 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+form {
+    background:#fff;
+    border-radius:6px;
+    padding: 30px 20px 20px;
+    width:300px;
+    margin:50px auto;
+    box-shadow:15px 15px 0 rgba(0,0,0,.1);
+}
+
+input {
+    width:100%;
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:6px;
+    margin-bottom:10px;
+    border:1px solid #eee;
+}
+
+input.invalid{
+    border-color: #ff6565;
+}
+
+input:focus,
+input:focus.invalid,
+textarea:focus {
+    outline: none;
+}
+
+label,
+select,
+button,
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"]
+input[type="button"] {
+    cursor: pointer;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+::selection {
+    background: #ed327b;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #ed327b;
+    color: #fff;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-size:100%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: #f6f0ee;
+}
+
+.btn {
+    position:relative;
+    width:100%;
+    padding:20px;
+    border-radius:6px;
+    border:0;
+    background:#f26964;
+    font-size:1.2em;
+    color:#fff;
+    text-shadow:1px 1px 0 rgba(0,0,0,.1);
+    box-shadow:0 3px 0 #c1524e;
+}
+
+.btn:active {
+    top:3px;
+    box-shadow:none;
+}
+
+h1 {
+    text-align:center;
+    font-size:1.4em;
+    font-weight:700;
+    color:#ccc;
+    margin-bottom:24px;
+}
+
+h5 {
+    text-align:center;
+    margin-top:5px;
+    color:rgba(0,0,0,.3);
+}
+
+h5 > a,a:visited {
+    color:#fff;
+    text-decoration:underline;
+}
+
+h5 > a:hover {
+    text-decoration:none;
+}
+
+h6 {
+    text-align:center;
+    padding: 35px 20px 20px;
+    color:#777;
+    cursor:pointer;
+}
+
+.notifyS,
+.notifyF {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    transition: height .2s;
+}
+
+.notifyF {
+    background: rgba(213, 0, 0, 0.6);
+}
+
+.notifyS {
+    background: rgba(21, 201, 0, 0.6);
+}
+
+#notifyTypeS:before,
+#notifyTypeF:before {
+    display: block;
+    margin-top: 15px;
+
+}
+
+.active{
+    height: 50px;
+}
+
+.success:before{
+    Content: "Successfully registered!";
+}
+
+.failure:before{
+    Content: "Wrong email or password";
+}
+
+.wrong:before{
+    Content: "User with such email already exists";
+}
