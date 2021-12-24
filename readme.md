@@ -40,7 +40,7 @@ now site available on <b>localhost:8080</b>
 
 ### Profile
 - logout button
-- change avatar
+- change avatar (jpeg, png, gif)
 - displaying actual account email
 - filter to access profile page for login users only
 
